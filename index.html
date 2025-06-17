@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quicklist - Lista de compras</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <img class="logo" src="imgs/logo.png" alt="Logo Quicklist">
+  </header>
+  <main class="container">
+    <form>
+      <fieldset>
+        <div class="shopping-list">
+          <a href="#">← Voltar</a>
+          <h1 class="title">Compras da semana</h1>
+        </div>
+        <div class="input-container">
+          <input id="new-item" name="new-item" aria-label="Adicione um novo item" type="text" placeholder="Adicione um novo item">
+          <button id="btn-add">Adicionar item</button>
+        </div>
+        <ul>
+          <li class="list-item">
+            <div class="item-inner">
+              <div class="checkbox-image"></div>
+              <input type="checkbox" id="pao-forma">
+              <label class="productName" for="pao-forma">Pão de forma</label>
+            </div>
+            <button type="button" class="trash" aria-label="Remover item da lista">
+              <img src="imgs/icons/trash.svg" alt='Ícone de uma lixeira'>
+            </button>
+          </li>
+          <li class="list-item">
+            <div class="item-inner">
+              <div class="checkbox-image"></div>
+              <input type="checkbox" id="cafe-preto">
+              <label class="productName" for="cafe-preto">Café Preto</label>
+            </div>
+            <button type="button" class="trash" aria-label="Remover item da lista">
+              <img src="imgs/icons/trash.svg" alt='Ícone de uma lixeira'>
+            </button>
+          </li>
+          <li class="list-item">
+            <div class="item-inner">
+              <div class="checkbox-image"></div>
+              <input type="checkbox" id="suco-laranja">
+              <label class="productName" for="suco-laranja">Suco de laranja</label>
+            </div>
+            <button type="button" class="trash" aria-label="Remover item da lista">
+              <img src="imgs/icons/trash.svg" alt='Ícone de uma lixeira'>
+            </button>
+          </li>
+        </ul>
+        <div class="list-item hidden" id="items-selected">
+          <img src="imgs/icons/check-list.svg" alt="CheckList">
+          <button type="button" class="btn-remove-selected">
+            <img src="imgs/icons/trash.svg" alt='Ícone de uma lixeira'>
+          </button>
+        </div>
+      </fieldset>
+    </form>
+    <footer class="alert">
+      <div>
+        <img src="imgs/icons/warning.svg" alt="Ícone de alerta">
+        <span class="removed">O item foi removido da lista</span>
+      </div>
+      <img class="remove-alert" src="imgs/icons/delete.svg" alt="Remover alerta da tela">
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
