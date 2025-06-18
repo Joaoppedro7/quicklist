@@ -91,7 +91,7 @@ form.onsubmit = (event) => {
   const itemName = inputNewItem.value.trim();
 
   const newItem = createProduct(itemName);
-  productList.appendChild(newItem);
+  productList.prepend(newItem);
   inputNewItem.value = "";
 
   closeAlert();
